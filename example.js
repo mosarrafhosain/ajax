@@ -1,4 +1,3 @@
-
 function XMLHttpRequestObject() {
     var XMLHttpRequestObject = false;
     if (window.XMLHttpRequest) {
