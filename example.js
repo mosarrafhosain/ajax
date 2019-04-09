@@ -1,3 +1,4 @@
+
 function XMLHttpRequestObject() {
     var XMLHttpRequestObject = false;
     if (window.XMLHttpRequest) {
@@ -6,9 +7,9 @@ function XMLHttpRequestObject() {
       XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
 	}
     return XMLHttpRequestObject;
-  }
+}
  
-  function showData(str) {
+function showData(str) {
     var xmlhttp = XMLHttpRequestObject();
     if (xmlhttp) {
       xmlhttp.onreadystatechange = function () {
@@ -19,4 +20,6 @@ function XMLHttpRequestObject() {
       xmlhttp.open("GET", "ajax.php?q=" + str, true);
       xmlhttp.send();
     }
-  }
+}
+  
+showData('str');
