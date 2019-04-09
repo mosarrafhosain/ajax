@@ -1,2 +1,2 @@
-# ajax
+# Ajax
 Practice Ajax
